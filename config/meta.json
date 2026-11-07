@@ -1,0 +1,10 @@
+{
+  "default": {
+    "title": "My member site",
+    "description": "Products I recommend, and a guestbook."
+  },
+  "pages": {
+    "/shop": { "title": "Shop", "description": "Products I recommend." },
+    "/guestbook": { "title": "Guestbook", "description": "Leave a message." }
+  }
+}

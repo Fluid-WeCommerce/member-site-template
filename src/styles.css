@@ -1,0 +1,90 @@
+/* Design tokens: plain CSS custom properties. Change these to match the
+   company's brand; nothing else in the template names a color or a size. */
+:root {
+  --color-text: #1d1d1f;
+  --color-muted: #6e6e73;
+  --color-background: #ffffff;
+  --color-surface: #f5f5f7;
+  --color-accent: #0a66c2;
+  --color-accent-text: #ffffff;
+  --radius: 10px;
+  --space: 16px;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --max-width: 880px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-background);
+}
+a {
+  color: var(--color-accent);
+}
+.site {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space);
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--space);
+  border-bottom: 1px solid var(--color-surface);
+}
+.site-header nav {
+  display: flex;
+  gap: var(--space);
+}
+button {
+  font: inherit;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--color-accent);
+  color: var(--color-accent-text);
+  cursor: pointer;
+}
+.products {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--space);
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+.products li {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: var(--space);
+}
+.actions {
+  display: flex;
+  gap: var(--space);
+  align-items: center;
+  flex-wrap: wrap;
+}
+.guestbook-form {
+  display: grid;
+  gap: 8px;
+  max-width: 420px;
+}
+.guestbook-form input,
+.guestbook-form textarea {
+  font: inherit;
+  padding: 8px;
+  border: 1px solid var(--color-surface);
+  border-radius: var(--radius);
+}
+.entries {
+  padding-left: 0;
+  list-style: none;
+}
+.entries li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-surface);
+}
