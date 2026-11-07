@@ -1,16 +1,14 @@
 import type { ReactElement } from "react";
 
 import { Link } from "./Link";
-import { Guestbook } from "./pages/Guestbook";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
-import { Shop } from "./pages/Shop";
 import { usePath } from "./router";
 
+// Each page of the site, by its path. A new page is a component here, a
+// <Link> to it, and its title in config/meta.json.
 const pages: Record<string, () => ReactElement> = {
   "/": Home,
-  "/shop": Shop,
-  "/guestbook": Guestbook,
 };
 
 export function App() {
@@ -20,11 +18,7 @@ export function App() {
   return (
     <div className="site">
       <header className="site-header">
-        <Link to="/">Home</Link>
-        <nav>
-          <Link to="/shop">Shop</Link>
-          <Link to="/guestbook">Guestbook</Link>
-        </nav>
+        <Link to="/">My member site</Link>
       </header>
       <main>
         <Page />
