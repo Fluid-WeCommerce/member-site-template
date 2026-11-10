@@ -1,6 +1,6 @@
-# Member site
+# Site
 
-A blank member site: a static Vite and React app that runs on a company's storefront at
+A blank site: a static Vite and React app that runs on a company's storefront at
 `/accounts/<handle>`, inside the storefront's cart, sign-in and account menu. Mist starts
 every new member site from this folder (features/member-sites, task 036-7); it is the
 content of the `Fluid-WeCommerce/member-site-template` repository.
@@ -11,6 +11,7 @@ content of the `Fluid-WeCommerce/member-site-template` repository.
 | -------------------- | -------------------------------------------------------------------------------- |
 | `src/main.tsx`       | Imports `@fluid-app/sites` once, which connects the site to the storefront       |
 | `src/App.tsx`        | The pages, by path: one home page, and a not-found page for any other path       |
+| `src/MistMark.tsx`   | The animated Mist mark on the home page (`src/mist-logo.js`). Delete it freely   |
 | `src/router.ts`      | A small router, with the storefront's Back and Forward, and `src/Link.tsx`       |
 | `src/styles.css`     | Plain CSS tokens at the top: the only place a color or size is named             |
 | `config/meta.json`   | Each page's title and description, for link previews. Only the home page for now |

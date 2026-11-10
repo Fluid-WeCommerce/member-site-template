@@ -1,6 +1,5 @@
 import type { ReactElement } from "react";
 
-import { Link } from "./Link";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 import { usePath } from "./router";
@@ -16,13 +15,8 @@ export function App() {
   const Page = pages[path] ?? NotFound;
 
   return (
-    <div className="site">
-      <header className="site-header">
-        <Link to="/">My member site</Link>
-      </header>
-      <main>
-        <Page />
-      </main>
-    </div>
+    <main className="site">
+      <Page />
+    </main>
   );
 }
