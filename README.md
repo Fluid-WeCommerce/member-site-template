@@ -1,7 +1,7 @@
 # Site
 
 A blank site: a static Vite and React app that runs on a company's storefront at
-`/accounts/<handle>`, inside the storefront's cart, sign-in and account menu. Mist starts
+`/home/sites/<handle>`, inside the storefront's cart, sign-in and account menu. Mist starts
 every new member site from this folder (features/member-sites, task 036-7); it is the
 content of the `Fluid-WeCommerce/member-site-template` repository.
 

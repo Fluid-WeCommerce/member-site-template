@@ -6,7 +6,7 @@ import { usePath } from "./router";
 
 // Each page of the site, by its path. A new page is a component here, a
 // <Link> to it, and its title in config/meta.json.
-const pages: Record<string, () => ReactElement> = {
+const pages: Record<string, () => ReactElement | null> = {
   "/": Home,
 };
 
